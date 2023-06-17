@@ -8,16 +8,17 @@ body {
 }
 #bg-div{
     margin: 2rem auto;
-    max-width: 500px;
-    height: 685px;
+    max-width: 630px;
+    height: 865px;
     background-image: url("paper.jpg");
-    border-radius: 10px;
-    background-size: cover; 
+    border-radius: 15px;
+    background-size: cover;
+    display: flex; 
+    justify-content: center;
 }
 #container-div{
-    max-width: 500px;
-    margin: 2rem auto;
-    display:block;
+    width: 500px;
+    margin: 2rem auto 3rem auto;
     width: 250px;
     padding: 1rem 0;
 }
@@ -36,16 +37,26 @@ body {
 	}
 }
 #title {
-    background:rgba(255,255,255,.5);
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, .3), 
+        rgba(243, 247, 255, .6), 
+        rgba(231, 239, 255, .5), 
+        rgba(218, 232, 255, .3), 
+        rgba(212, 228, 255, .6), 
+        rgba(255, 255, 255, .2), 
+        rgba(245, 248, 255, .6), 
+        rgba(237, 243, 255, .5), 
+        rgba(224, 236, 255, .3), 
+        rgba(212, 228, 255, .7));
     width: 200px;
 	height: 60px;
 	box-sizing: border-box;
-	border: 1px solid rgba(150,150,150,.7);
+	border: 1px solid rgba(150,150,150,.5);
 	border-radius: 5px;
 	box-shadow: 0 5px 12px 0px rgba(0,0,0,0.65);
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
-	margin: 20px auto;
+	margin: 35px auto 10px auto;
 }
 h1 {
     padding: 10px 0 0 0;
@@ -64,10 +75,10 @@ p{
     border-radius: 5px;
     border: 5px inset rgba(220, 220, 220, .8);
 }
-
 button {
     font-family: 'Neucha', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: none;
+    font-size: 24px;
     padding: 10px 20px;
     color: white;
     border-radius: 5px;
@@ -77,11 +88,11 @@ button {
 .btn-div{
     display:flex;
     justify-content: space-between;
-    margin: 3rem auto 4.75rem auto;
+    margin: 2.5rem auto 4.7rem auto;
 }
 .btn{
     margin: 0;
-    width: 60px;
+    width: 70px;
     height: 60px;
 }    
 #increment-btn {
@@ -118,7 +129,7 @@ button {
 }
 
 #save-div{
-    margin: 0 auto 25px auto;
+    margin: 0 auto 32px auto;
     width: 250px;
     height: 150px; 
 }
@@ -132,18 +143,19 @@ button {
 }
 
 
+/* Mobile  */
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 500px){
     #bg-div{
         margin: 1rem auto;
-        max-width: 250px;
-        height: 345px;
+        max-width: 280px;
+        height: 384px;
         border-radius: 5px;
     }
     #container-div{
-        max-width: 200px;
-        margin: auto;
-        padding: 1rem 0;
+        width: 200px;
+        margin: 1rem auto;
+        
     }
     h1 {
         font-size: 22px; 
@@ -153,7 +165,7 @@ button {
     }
     p{
         font-size: 14px;
-        line-height: 15px;
+        line-height: 16px;
     }
     #count-el {
         font-size: 35px;
@@ -162,7 +174,8 @@ button {
         border: 3px inset rgba(220, 220, 220, .8);
     }
     button {
-        padding: 5px 10px;   
+        padding: 5px 10px; 
+        font-size: 20px;  
     }
     .btn{
         width: 60px;
@@ -172,13 +185,13 @@ button {
         margin: 10px auto 1.5rem auto;
     }
     #reset-btn {
-        margin: 5px auto; 
+        margin: 10px auto; 
     }
     #save-div{
-        margin: 32px auto 10px auto;
+        margin: 0 auto 16px auto;
         width: 180px;
         height: 50px;  
-    }
+    } 
     @keyframes float {
         0% {
             box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -200,4 +213,4 @@ button {
         animation: float 6s ease-in-out infinite;
         margin: 10px auto;
     }
-}
+} 
