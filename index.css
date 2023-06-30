@@ -59,7 +59,7 @@ body {
 	margin: 35px auto 10px auto;
 }
 h1 {
-    padding: 10px 0 0 0;
+    padding-top: 10px;
     margin: auto;   
 }
 p{
@@ -69,6 +69,7 @@ p{
 #count-el {
     font-size: 45px;
     margin: auto;
+    padding: 3px;
     width: 80px;
     height: 50px;
     background: rgb(220, 220, 220);
@@ -158,9 +159,9 @@ button {
         
     }
     h1 {
-        font-size: 22px; 
-        padding: 2px 0 6px 0;
-        width: 100px;
+        font-size: 20px; 
+        padding: 2px 0;
+        width: 110px;
         margin: auto;   
     }
     p{
