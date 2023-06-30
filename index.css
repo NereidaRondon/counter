@@ -183,13 +183,13 @@ button {
         height: 50px;
     } 
     .btn-div{
-        margin: 10px auto 1.5rem auto;
+        margin: 10px auto 22px auto;
     }
     #reset-btn {
         margin: 10px auto; 
     }
     #save-div{
-        margin: 0 auto 16px auto;
+        margin: 0 auto 15px auto;
         width: 180px;
         height: 50px;  
     } 
